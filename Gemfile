@@ -12,7 +12,10 @@ gem 'rails', '~> 5.1.1'
 gem 'bootstrap-sass', '3.3.6'
 gem 'rails-controller-testing'
 gem 'bcrypt', '~> 3.1.11'
+#gem 'bcrypt', platforms: :ruby
+gem 'jquery-rails'
 gem 'sqlite3'
+gem 'rake'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
