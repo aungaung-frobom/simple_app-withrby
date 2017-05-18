@@ -26,11 +26,6 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", logout_path,      count: 0
     assert_select "a[href=?]", user_path(@user), count: 0
   end
-  =begin
-  test "logi in with remembering" do
-    log_in_as(@user, remember_me: '1')
-    assert_equal name, assigns(:user).name
-  end
-  =end
+  
   
 end
