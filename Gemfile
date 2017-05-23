@@ -7,8 +7,12 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
-gem 'pg', '~> 0.18'
+gem 'pg'
 gem 'bootstrap-sass', '3.3.6'
+# for image upload
+gem 'carrierwave',             '0.11.2'
+gem 'mini_magick',             '4.5.1'
+gem 'fog',                     '1.38.0'
 
 gem 'rails-controller-testing'
 
@@ -59,7 +63,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  #gem "sqlite3"
+  gem "sqlite3"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
